@@ -1,6 +1,6 @@
 # **EXERCISE 1A: CUSTOMIZATIONS AT SENDER PROCESSING SIDE**
 
-The second exercise is focused on the business transaction activity: Purchase Order Response in where the SAP IDOC ORDRSP.ORDERS05 is the sender interchange payload. It involves determining the corresponding tax identifier from a lookup table in the form of a CSV file and writing it to the segment TAX with the qualifier 7 within the LIN segment group of the UN/EDIFACT ORDRSP outpout. This CSV file looks like following:
+The second exercise is focused on the business transaction activity: Purchase Order Response in where the SAP IDOC ORDRSP.ORDERS05 is the sender interchange payload. It involves determining the corresponding tax identifier from a lookup table in the form of a CSV file and writing it to the segment TAX with the qualifier 7 within the LIN segment group of the UN/EDIFACT ORDRSP outpout. This CSV file looks like following:\
 
 PARTN;IDTNR;Currency;TaxID|
 0001000654;MZ-FG-S100;EUR;AAAA-01|
@@ -24,15 +24,18 @@ The mentioned CSV file must exist in the data store: BTP4_CVM_Table, which emula
 Pnnnnnnnn . Pre-Processing . OrderResponse - Outbound . SAP IDoc
 
 The mapping step gets the result of the BTP4_CVM_Table from pre-processing integration flow via the parameter “CVM_TaxCode” and the currency code via a further parameter Trading_Partner_Currency which is also maintained in the TPP and referred in the corresponding TPA.
-Based on the mapped source elements:
+Based on the mapped source elements:\
 
-•	Partner number from the sold-to partner (E1EKA1[PARVW = AG]/PARTN)
+•	Partner number from the sold-to partner (E1EKA1[PARVW = AG]/PARTN)\
 •	Material number used by vendor (E1EDP01/E1EDP19[QUALF = 002]/IDTNR)
+
 And the Trading_Partner_Currency from the Trading Partner Profile, the following mapping functions returns the corresponding TaxID from the list CVM_TaxCode:
+
 <xsl:variable name="vPartnerID" select="$nodes_in/PARTN"/>
 <xsl:variable name="vIdtNr" select="$nodes_in/IDTNR"/>
 <xsl:variable name="vCurrency" select="$Trading_Partner_Currency"/>
 <xsl:variable name="vLookupTable" select="tokenize($CVM_TaxCode, '\|')"/>
 <xsl:value-of select="for $i in $vLookupTable return if(tokenize($i, ';')[1] = $vPartnerID and tokenize($i, ';')[2] = $vIdtNr and tokenize($i, ';')[3] = $vCurrency) then tokenize($i, ';')[4] else ()"/>
+
 Especially the function for $i in $vLookupTable return if … loops across each entry, compares the three input values and returns the TaxID (fourth value) if there is a match.
 
