@@ -42,7 +42,7 @@ The following steps explain to you how you can set up and test the API testing t
 (f)	Select the Direction: Receiver\
 (g)	Select the Adapter “Process_Direct”\
 (h)	Enter the Address: /TP_P12345678/tpm/b2b-simulation/receiver whereby P12345678 is your user id address\
-(i)	Click on “Save” button\
+(i)	Click on “Save” button
 
 
 
@@ -55,13 +55,13 @@ The following steps explain to you how you can set up and test the API testing t
 (d)	Enter the same value as Description\
 (e)	Select the Direction: Sender\
 (f)	Select the Adapter “Process_Direct”\
-(g)	Click on “Save” button\
+(g)	Click on “Save” button
 
 
 
 3.	Open your trading partner agreement “Procure to Pay - P12345678” that you created in exercise 1, and\
 (a)	Deactivate it, and\
-(b)	Click on “Edit” button\
+(b)	Click on “Edit” button
 
 
 4.	Change the communication channels accordingly:\
@@ -69,25 +69,25 @@ The following steps explain to you how you can set up and test the API testing t
 (b)	Purchase Order Request – Receiver Communication: B2B-Simulation.Receiver\
 (c)	Purchase Order Response – Sender Communication: B2B-Simulation.Sender\
 (d)	Purchase Order Response – Receiver Communication: B2B-Simulation.Receiver\
-(e)	Click on “Save” button\
+(e)	Click on “Save” button
 
 
 
 5. Write the changed configuration into the Partner Directory by \
-(a)	Clicking on “Activate” button\
+(a)	Clicking on “Activate” button
 
 
 
 6.	Take your API test tool of your choice. We prepared the content for Insomnia. If you don’t have installed an API test tool, download and install it for one of the following download sites:\
-Insomnia: https://insomnia.rest/download\
+Insomnia: https://insomnia.rest/download
 
 
-7.	Your Tenant is opensapeu01\
+7.	Your Tenant is opensapeu01
 
 
 8.	If you go for Insomnia\
 (a)	Click on “Import” and\
-(b)	Import the provided collection “OpenSAP BTP4 - B2B Simulation - Insomnia Collection” from the discovery page\
+(b)	Import the provided collection “OpenSAP BTP4 - B2B Simulation - Insomnia Collection” from the discovery page
 
 
 
@@ -95,16 +95,15 @@ Insomnia: https://insomnia.rest/download\
 (a)	You should see the collection of the prepared HTTP Get Requests\
 (b)	Click on button ( ) for managing environments\
 (c)	In the window “Management Environments” select your tenant (openSAPEU01)\
-(d)	Subsitute the user id Pnnnnnnnnn with your user id such as P12345678 (or e.g. User13) and click on close button.\
+(d)	Subsitute the user id Pnnnnnnnnn with your user id such as P12345678 (or e.g. User13) and click on close button.
 
 
 10.	Back in the main view\
-(a)	Select the environment of your booked tenant name that you identified in step 7\
-
+(a)	Select the environment of your booked tenant name that you identified in step 7
 
 10.	If you are now in the Insomnia “Collection” view:\
 (a)	Go to the Purchase Order Request  UN/EDIFACT ORDERS entry.\
-(b)	Click on “Headers” tab for checking the header attributes.\
+(b)	Click on “Headers” tab for checking the header attributes.
 
 
 11.	In the “Header” attributes view you should see:\
@@ -114,14 +113,14 @@ Which is in this case the sender communication channel type\
 Which is the sending MIME Type content type.\
 (c)	type_system: UN-EDIFACT\
 Which is the sending type system\
-(d)	insert_carriage_return: true \
+(d)	insert_carriage_return: true 
 
 true means, that a carriage return will be inserted after each segment.\
-If you set “false”, you’ll get the receiver UN/EDIFACT interchange payload without carriage return after each segment.\
+If you set “false”, you’ll get the receiver UN/EDIFACT interchange payload without carriage return after each segment.
 
 
 12.	Now you can simulate the end-to-end flow\
 (a)	Click on “Send” button, and\
-(b)	You’ll see the result in the HTTP response part after view seconds, if everything was processed sufficiently.\
+(b)	You’ll see the result in the HTTP response part after view seconds, if everything was processed sufficiently.
 
 
