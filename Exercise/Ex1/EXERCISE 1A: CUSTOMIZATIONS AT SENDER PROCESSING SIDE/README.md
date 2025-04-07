@@ -15,6 +15,7 @@ PARTN;IDTNR;Currency;TaxID|
 
 In this case, the TaxId can only be determined using three input values (PARTN, IDTNR, Currency). If there is match of the 2 input values with the respective entries in the CSV file, a TaxID from the specific entry will be returned. The input of PARTN (partner number) is to be taken from the sold-to partner (E1EKA1[PARVW = AG]) in the sender IDOC message. The IDTNR originates from the respective line item, especially from the segment E1EDP19[QUALF = 002] "Material number used by vendor" within this line item (E1EDP01). The currency is a value that is maintained in the trading partner profile as a custom parameter, and it has to be handed over accordingly so that this can be used during the lookup in the mapping step. The expected output should be like in the following example in where you can see that each line item (LIN) has an additional TAX segment with the specific TaxID:
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/blob/main/exercises/Ex01/1/assets/1.png)
 
 
 # **How it works?**
