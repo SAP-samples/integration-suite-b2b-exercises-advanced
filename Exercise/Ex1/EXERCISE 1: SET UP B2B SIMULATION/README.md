@@ -2,6 +2,9 @@
 
 In the first exercise, we set up a B2B simulation so that you can use an API test tool to send the interchange payloads to the Integration Suite - B2B system via an HTTP request. The received result via the synchronous HTTP response will be displayed in the same session of the API test tool like shown in the following figure.
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/blob/main/exercises/Ex01/EXERCISE 1: SET UP B2B SIMULATION/assets/1.png)
+
+
 # **How it works?**
 
 This B2B simulation is based on 2 integration flows which are connected to the B2B generic flows via ProcessDirect. 
