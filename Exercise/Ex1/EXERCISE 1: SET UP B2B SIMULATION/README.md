@@ -28,7 +28,7 @@ Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 
 
 
-**Prerequisites**
+# **Prerequisites**
 
 1.	The exercise 1 must be successfully fulfilled.
 2.	Pnnnnnnnn - Step 1a - B2B Simulation.Sender must be deployed.
@@ -36,7 +36,7 @@ Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 4.	An API test tool such as Insomnia is successfully installed on your computer.
 
 
-**Exercise Steps**
+# **Exercise Steps**
 
 The following steps explain to you how you can set up and test the API testing tool based B2B simulation using the 2 already prepared custom communication integration flows:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Pnnnnnnnn - Step 1a - B2B Simulation.Sender\
