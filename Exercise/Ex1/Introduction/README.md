@@ -27,6 +27,8 @@ For the following 5 exercises, it is necessary to copy several integrations flow
 (a)	Choose Design -> Integration and APIs
 (b)	Open the integration package: **OpenSAP BTP4 Week3 Exercises - Templates**
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/Introduction/assets/1.png)
+
 
 2. Copy all the 6 integration flows of this integration package into your already created integration package **openSAP-BTP4-P12345678** by the following steps:
 (a)	Click per integration flow at Action button -> Copy.
@@ -38,10 +40,14 @@ For the following 5 exercises, it is necessary to copy several integrations flow
 
 Remark: You may have mistakenly copied the integration flow to the same template integration package. Delete this integration flow from this package, please.
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/Introduction/assets/2.png)
+
 
 3. Go into your package openSAP-BTP4-User13 -> Artifacts, and
 (a)	Select all 6 copied integration flows which start with your user id.
 (b)	Click on Actions -> Configure
+
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/Introduction/assets/3.png)
 
 
 4. In the window “Configure Selected Artifacts”
@@ -50,5 +56,5 @@ Remark: You may have mistakenly copied the integration flow to the same template
 (c)	Once you changed user id in all configuration menus, click on button “Deploy all”.
 (d)	Click on “Save” button in the message window “Confirmation”
 
-
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/Introduction/assets/4.png)
 
