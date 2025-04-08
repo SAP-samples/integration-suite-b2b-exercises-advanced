@@ -92,10 +92,10 @@ into the field of “Process Direct Address”.\
 (a)	Click on “Update” button so that these changes will be written into the Partner Directory.
 
 10.	Once the updated business transaction is updated successfully, \
-(a)	You can now send the IDOC ORDRSP.ORDERS05 (Purchase Order Response) message via your API testing tool.
-(b)	After a short while you’ll find the response with the added UNA segment
-(c)	With an added value in the data element “0032 – Communications agreement ID” in the UNB segment
-(d)	With an ordinal number per line item in the data element 1082 (Line item identifier)
-(e)	With a resorted line items according to the values of data element (3446 - Party tax identifier) in segment group SG32  TAX
+(a)	You can now send the IDOC ORDRSP.ORDERS05 (Purchase Order Response) message via your API testing tool.\
+(b)	After a short while you’ll find the response with the added UNA segment\
+(c)	With an added value in the data element “0032 – Communications agreement ID” in the UNB segment\
+(d)	With an ordinal number per line item in the data element 1082 (Line item identifier)\
+(e)	With a resorted line items according to the values of data element (3446 - Party tax identifier) in segment group SG32 -> TAX\
 (f)	And with the summary of all amounts from the PRI segments of the line items in the segment MOA with the qualifier 128.
 
