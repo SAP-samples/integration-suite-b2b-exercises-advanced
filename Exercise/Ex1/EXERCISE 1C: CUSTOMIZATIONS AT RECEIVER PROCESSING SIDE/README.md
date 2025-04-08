@@ -30,7 +30,7 @@ XSLT Script:
 1.	[Exercise 1](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01) must be successfully fulfilled.
 2.	Integration flow: Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT must be deployed.
 
-# **Configuration Steps and Test   **
+# **Configuration Steps and Test**
 
 The following steps explain how you can set up a custom post-processing, which will manipulate the target payload after the mapping step.
 
