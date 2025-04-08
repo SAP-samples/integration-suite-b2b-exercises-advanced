@@ -1,19 +1,25 @@
-# Integration Suite - B2B Advance Extercises
+# Integration Suite - B2B Advance Extercises]
 
+to be added
 
-# [Title]
-<!-- Please include descriptive title -->
+## Overview
 
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
-
-## Description
-<!-- Please include SEO-friendly description -->
+to be added
 
 ## Requirements
 
-## Download and Installation
+to be added
+
+## Access to SAP Integration Suite tenant
+
+to be added
+
+## Exercises
+
+In the following, the complete list of exercise steps are listed. You can use this section as an index or table of contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
+
+
+
 
 ## License
 Copyright (c) 2024 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
