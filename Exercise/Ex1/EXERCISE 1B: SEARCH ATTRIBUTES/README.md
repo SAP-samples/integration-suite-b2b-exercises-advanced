@@ -22,6 +22,8 @@ The following steps explain how you can set up search attributes and use these i
 (e)	And in the field of “Description”: The number of the business document\
 (f)	Click on “Save” button.\
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/blob/main/exercises/Ex01/1/assets/1.png)
+
 
 3.	In the list of “Custom Search Attributes”
 (a)	Now you should see one entry with the name “Document Nr.”.
