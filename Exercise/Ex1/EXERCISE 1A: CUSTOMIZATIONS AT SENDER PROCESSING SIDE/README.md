@@ -18,7 +18,7 @@ In this case, the TaxId can only be determined using three input values (PARTN, 
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201A%3A%20CUSTOMIZATIONS%20AT%20SENDER%20PROCESSING%20SIDE/assets/1.png)
 
 
-# **How it works?**
+## **How it works?**
 
 The mentioned CSV file must exist in the data store: BTP4_CVM_Table, which emulates the external persistence. In a case of processing of the business transaction activity “Purchase Order Response”, the pre-processing step is calling the integration flow Pnnnnnnnn . Pre-Processing . OrderResponse - Outbound . SAP IDoc, which picks the appropriate entry from the data store and hands over as parameter to the next activity step, the mapping step. In order find the specific entry, a trading partner related an entry ID “Data_Store_Entry” must be maintained in the Trading Partner Profile(TPP) and referred in the corresponding Trading Partner Agreement(TPA). 
 
@@ -44,13 +44,13 @@ And the Trading_Partner_Currency from the Trading Partner Profile, the following
 Especially the function for $i in $vLookupTable return if … loops across each entry, compares the three input values and returns the TaxID (fourth value) if there is a match.
 
 
-# **Prerequisites**
+## **Prerequisites**
 
 1.	Exercise 1 is successfully fulfilled.
 2.	Integration flow: Pnnnnnnnn . Pre-Processing . OrderResponse - Outbound . SAP IDoc is deployed
 3.	Integration flow: P12345678 - Insert entry into lookup table BTP4_CVM_Table once so that you can find in the data store OpenSAP-BTP4_CVM_Table and entry with the ID: EDI_Pnnnnnnnn in where Pnnnnnnnn is your user id. See: Monitor  Integrations and APIs  -> Data Stores  -> OpenSAP-BTP4_CVM_Table
 
-# **Exercise Steps**
+## **Exercise Steps**
 
 The following steps explain to you, how you can integrate integration flow that runs as custom pre-processing in front of the mapping step. It also explains how you can inject the results of the custom pre-processing into the mapping step itself.
 
