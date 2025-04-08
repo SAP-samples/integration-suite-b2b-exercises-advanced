@@ -16,6 +16,8 @@ The following steps explain, how you can set up a custom communication channel a
 (a)	Do a double click on the adapter line “ProcessDirect” so that you can see the details of the “ProcessDirect”.\
 (b)	Take in tab “Connection” the address: /TP_Pnnnnnnnn/ tpm/email/receiver and copy into a notepad (Please consider Pnnnnnnn should be your user id)
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/1.png)
+
 
 2.	Now take the necessary variables from the e-mail communication which you must added into the TPA configuration.\
 (a)	Therefore, do a double click on the communication adapter “Mail” \
