@@ -8,7 +8,7 @@ You will also learn, how you can calculate a summary of line items. This should 
 You will also learn, how you can set of ordinal numbers per line item in the data element 1082 (Line item identifier) of the LIN segment. Like in the following example shown, a further part of this exercise is the insertion of further values that are not supported by the standard TPA configuration such as the value EDI_ORDRPS in the data element 0032 – Communications agreement into the UNB interchange envelope segment and the insertion the UNA (Service String Advice) segment.
 The expected output should be:
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/blob/main/exercises/Ex01/1/assets/1.png)
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/1.png)
 
 
 # **How it works?**
@@ -23,6 +23,8 @@ c)	Set ordinal number in LIN segment – This function also needs an already gen
 
 XSLT Script:
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/2.png)
+
 # **Prerequisites**
 
 1.	[Exercise 1](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01) must be successfully fulfilled.
@@ -36,10 +38,15 @@ The following steps explain how you can set up a custom post-processing, which w
 (a)	Select the business transaction activity “Purcchase Order Response” the step “Mapping”, and\
 (b)	Open the MAG by clicking on the version in the opened callout.
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/3.png)
+
+
 2.	Once the MAG is opened\
 
 (a)	Enable the MAG in edit mode by clicking on “Edit” button, and\
 (b)	Open the target MIG by clicking on the link on top of the target structure.
+
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/4.png)
 
 3.	Switch to the edit mode. Once you did it, add following group and leaf nodes according to the instructions of creating a MIG (Chapter 2) from [Exercise 1](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01). \
 
@@ -49,6 +56,8 @@ The following steps explain how you can set up a custom post-processing, which w
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii)	5025 – Monetary amount type code qualifier\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii)	5004 – Monetary amount\
 (c)	Click on “Save” button and may “Cancel” button for unlocking the MIG.
+
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/5.png)
 
 
 4.	Now you can add the additional mapping elements into the MAG. Therefore, go back into the opened “MAG” and click on refresh button (F5) so that you can see the extensions made in the target MIG. Once the MAG in the edit mode, you should do following steps:\
@@ -63,6 +72,8 @@ The following steps explain how you can set up a custom post-processing, which w
 (h)	Click on button “OK”.\
 (i)	Click on “Save” button and may “Cancel” button for unlocking the MAG.
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/6.png)
+
 
 5. Once you added the extensions into the MAG, go back into your TPA “Procure to Pay - P12345678” and add further activity parameters which inserts additional values into the envelope header (UNB segment) by \
 (a)	Open the tab “Activity Parameters”\
@@ -71,16 +82,24 @@ The following steps explain how you can set up a custom post-processing, which w
 (d)	Enter the value “EDI_ORDRSP”.\
 (e)	Click on “Save” button.
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/7.png)
 
 6.	Once the new activity parameter is saved, you \
 (a)	Should see the new entry in the list of “Activity parameters”. \
 (b)	Should than go to the receiver activity step “Interchange”. In here you should enter the address for pointing to the custom post-processing.
 
+
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/8.png)
+
+
 7.	This address can be taken from the custom post-processing integration flow. Therefore, open in another web browser tab the integration flow: “Pnnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT” and \
 (a)	Do a double click on the adapter line “ProcessDirect” so that you can see the details of the “ProcessDirect”. \
 (b)	Take in tab “Connection” the address: /TP_Pnnnnnnnn/tpm/post-processing/orderResponse-outbound/un-edifact and copy into a notepad (Please consider Pnnnnnnn should be your user id)
 
-8.	Open the windows browser tab  in where you see the TPA “Procure to Pay - P12345678” including the already selected receiver interchange activity. If the TPA is in edit mode, you should:\
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/9.png)
+
+
+9.	Open the windows browser tab  in where you see the TPA “Procure to Pay - P12345678” including the already selected receiver interchange activity. If the TPA is in edit mode, you should:\
 (a)	Select the check box of “Customized Post-Processing” and enter the copied address /TP_nnnnnnnn/tpm/post-processing/orderResponse-outbound/un-edifact 
 into the field of “Process Direct Address”.\
 (b)	For inserting the UNA segment into the receiver interchange payload, select the check box “Use Custom Separators” and select following values:\
@@ -90,10 +109,15 @@ into the field of “Process Direct Address”.\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv)	Escape Character: Question Mark (?)\
 (c)	Click on “Save” button.
 
-9.	Once you finished and saved the configuration\
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/10.png)
+
+
+10.	Once you finished and saved the configuration\
 (a)	Click on “Update” button so that these changes will be written into the Partner Directory.
 
-10.	Once the updated business transaction is updated successfully, \
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/11.png)
+
+12.	Once the updated business transaction is updated successfully, \
 (a)	You can now send the IDOC ORDRSP.ORDERS05 (Purchase Order Response) message via your API testing tool.\
 (b)	After a short while you’ll find the response with the added UNA segment\
 (c)	With an added value in the data element “0032 – Communications agreement ID” in the UNB segment\
@@ -101,3 +125,4 @@ into the field of “Process Direct Address”.\
 (e)	With a resorted line items according to the values of data element (3446 - Party tax identifier) in segment group SG32 -> TAX\
 (f)	And with the summary of all amounts from the PRI segments of the line items in the segment MOA with the qualifier 128.
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/12.png)
