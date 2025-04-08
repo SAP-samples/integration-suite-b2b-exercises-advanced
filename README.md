@@ -18,6 +18,7 @@ to be added
 
 In the following, the complete list of exercise steps are listed. You can use this section as an index or table of contents. Use the breadcrumb navigation on top of the pages to go back to the Table of Contents.
 
+https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/tree/main/Exercise/Ex1
 
 
 
