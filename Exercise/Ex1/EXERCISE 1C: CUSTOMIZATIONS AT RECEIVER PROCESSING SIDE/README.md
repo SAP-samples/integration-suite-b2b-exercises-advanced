@@ -8,6 +8,8 @@ You will also learn, how you can calculate a summary of line items. This should 
 You will also learn, how you can set of ordinal numbers per line item in the data element 1082 (Line item identifier) of the LIN segment. Like in the following example shown, a further part of this exercise is the insertion of further values that are not supported by the standard TPA configuration such as the value EDI_ORDRPS in the data element 0032 – Communications agreement into the UNB interchange envelope segment and the insertion the UNA (Service String Advice) segment.
 The expected output should be:
 
+![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/blob/main/exercises/Ex01/1/assets/1.png)
+
 
 # **How it works?**
 
