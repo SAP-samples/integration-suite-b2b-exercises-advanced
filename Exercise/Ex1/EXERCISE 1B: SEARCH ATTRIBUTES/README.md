@@ -2,13 +2,13 @@
 
 In the third exercise, you will learn how to configure the B2B monitoring specific search attributes and how to display and use them in B2B monitoring. Search attributes help you to show further values in B2B monitoring which will not provide by the TPM standard parameters. For example, you can than obtain for example business document or purchase order numbers per sender or receiver interchange payload and display them in the B2B monitoring. Furthermore, you can search for B2B interchange entries via these attributes such as business document or purchase order number.
 
-# **Prerequisites**
+## **Prerequisites**
 
 1.	Exercise 1 must be successfully fulfilled.
 2.	Integration flow: Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT is deployed.
 
 
-# **Configuration Steps and Test**
+## **Configuration Steps and Test**
 
 The following steps explain how you can set up search attributes and use these in the B2B Monitoring.
 
