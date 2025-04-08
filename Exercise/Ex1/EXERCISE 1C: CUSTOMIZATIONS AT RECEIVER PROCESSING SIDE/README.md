@@ -11,7 +11,7 @@ The expected output should be:
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/1.png)
 
 
-# **How it works?**
+## **How it works?**
 
 The integration flow of the custom post-processing “Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT” is very simple. It just calls a XSLT script, which is responsible for:\
 
@@ -25,12 +25,12 @@ XSLT Script:
 
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/2.png)
 
-# **Prerequisites**
+## **Prerequisites**
 
 1.	[Exercise 1](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01) must be successfully fulfilled.
 2.	Integration flow: Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT must be deployed.
 
-# **Configuration Steps and Test**
+## **Configuration Steps and Test**
 
 The following steps explain how you can set up a custom post-processing, which will manipulate the target payload after the mapping step.
 
