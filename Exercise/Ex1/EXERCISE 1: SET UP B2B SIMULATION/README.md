@@ -5,7 +5,7 @@ In the first exercise, we set up a B2B simulation so that you can use an API tes
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/1.png)
 
 
-# **How it works?**
+## **How it works?**
 
 This B2B simulation is based on 2 integration flows which are connected to the B2B generic flows via ProcessDirect. 
 
@@ -28,7 +28,7 @@ Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 
 
 
-# **Prerequisites**
+## **Prerequisites**
 
 1.	The exercise 1 must be successfully fulfilled.
 2.	Pnnnnnnnn - Step 1a - B2B Simulation.Sender must be deployed.
@@ -36,7 +36,7 @@ Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 4.	An API test tool such as Insomnia is successfully installed on your computer.
 
 
-# **Exercise Steps**
+## **Exercise Steps**
 
 The following steps explain to you how you can set up and test the API testing tool based B2B simulation using the 2 already prepared custom communication integration flows:\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Pnnnnnnnn - Step 1a - B2B Simulation.Sender\
