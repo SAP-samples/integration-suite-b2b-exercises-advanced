@@ -1,4 +1,4 @@
-# **EXERCISE 1B: SEARCH ATTRIBUTES**
+# **Exercise 2B: search attributes**
 
 In the third exercise, you will learn how to configure the B2B monitoring specific search attributes and how to display and use them in B2B monitoring. Search attributes help you to show further values in B2B monitoring which will not provide by the TPM standard parameters. For example, you can than obtain for example business document or purchase order numbers per sender or receiver interchange payload and display them in the B2B monitoring. Furthermore, you can search for B2B interchange entries via these attributes such as business document or purchase order number.
 
@@ -93,3 +93,4 @@ The following steps explain how you can set up search attributes and use these i
 
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/9.png)
 
+[Continue with Exercise 2C](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/README.md)
