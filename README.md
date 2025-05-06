@@ -1,4 +1,4 @@
-# Integration Suite - B2B Advance Extercises
+# Integration Suite - B2B advanced Exerciss
 
 to be added
 
