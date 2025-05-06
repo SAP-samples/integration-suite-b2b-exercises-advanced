@@ -1,4 +1,4 @@
-# **EXERCISE 1D: CUSTOM RECEIVER COMMUNICATION CHANNEL**
+# **Exercise 1D: Custom receiver communication channel**
 
 In the fifth exercise, you will learn how to set-up other receiver communication protocols that are currently not supported by the TPM. In this case, you create and configure an SMTP (eMail) receiver communication using a custom receiver communication integration flow, which will be configured in the Trading Partner Profile and enabled in the Trading Partner Agreement.
 
