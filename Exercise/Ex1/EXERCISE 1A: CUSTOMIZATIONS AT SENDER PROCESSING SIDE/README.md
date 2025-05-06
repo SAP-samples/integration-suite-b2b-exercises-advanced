@@ -1,4 +1,4 @@
-# **EXERCISE 1A: CUSTOMIZATIONS AT SENDER PROCESSING SIDE**
+# **Exercise 2A: Customizations at sender processing side**
 
 The second exercise is focused on the business transaction activity: Purchase Order Response in where the SAP IDOC ORDRSP.ORDERS05 is the sender interchange payload. It involves determining the corresponding tax identifier from a lookup table in the form of a CSV file and writing it to the segment TAX with the qualifier 7 within the LIN segment group of the UN/EDIFACT ORDRSP outpout. This CSV file looks like following:\
 
@@ -228,5 +228,5 @@ Press the Validate Button to make sure the xslt is correct\
 
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201A%3A%20CUSTOMIZATIONS%20AT%20SENDER%20PROCESSING%20SIDE/assets/20.png)
 
-
+[Continue with Exercise 2B](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/README.md)
 
