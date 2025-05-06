@@ -1,4 +1,4 @@
-# **EXERCISE 1C: CUSTOMIZATIONS AT RECEIVER PROCESSING SIDE**
+# **Exercise 2C: Customizations at receiver processing side**
 
 
 In the this exercise, you will learn how to do a further sorting of the mapping output through an integration flow “Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT” that is called by custom post-processing.  In this case, the line items should be sorted according to the Tax Identifiers from Exercise 3. It means the line items with the same Tax Identifiers should be grouped together. 
@@ -126,3 +126,5 @@ into the field of “Process Direct Address”.\
 (f)	And with the summary of all amounts from the PRI segments of the line items in the segment MOA with the qualifier 128.
 
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/assets/12.png)
+
+[Continue with Exercise 2D](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201D%3A%20CUSTOM%20RECEIVER%20COMMUNICATION%20CHANNEL/README.md)
