@@ -1,4 +1,4 @@
-# **EXERCISE 2: SET UP B2B SIMULATION**
+# **Exercise 2: set up B2B Simulation**
 
 In the first exercise, we set up a B2B simulation so that you can use an API test tool to send the interchange payloads to the Integration Suite - B2B system via an HTTP request. The received result via the synchronous HTTP response will be displayed in the same session of the API test tool like shown in the following figure.
 
@@ -155,3 +155,4 @@ If you set “false”, you’ll get the receiver UN/EDIFACT interchange payload
 
 ![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/15.png)
 
+[Continue with Exercise 2A](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201A%3A%20CUSTOMIZATIONS%20AT%20SENDER%20PROCESSING%20SIDE/README.md)
