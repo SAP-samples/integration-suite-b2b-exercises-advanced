@@ -15,16 +15,17 @@ Through the fourth exercise, you will learn how and for what customized post-pro
 In the fifth exercise, you will learn how to create and configure a customized receiver communication.
 
 ## Steps
+[Tenant Preparation and Introduction](Introduction/README.md)
 
-[Exercise 2: set up B2B Simulation](Exercise/Exercise%202/README.md)
+[Exercise 2: set up B2B Simulation](Exercise%202/README.md)
 
-[Exercise 2A: Customizations at sender processing side](Exercise/Exercise%202A/README.md)
+[Exercise 2A: Customizations at sender processing side](Exercise%202A/README.md)
 
-[Exercise 2B: search attributes](Exercise/Exercise%202B/README.md)
+[Exercise 2B: search attributes](Exercise%202B/README.md)
 
-[Exercise 2C: Customizations at receiver processing side](Exercise/Exercise%202C/README.md)
+[Exercise 2C: Customizations at receiver processing side](Exercise%202C/README.md)
 
-[Exercise 2D: Custom receiver communication channel](Exercise/Exercise%202D/README.md)
+[Exercise 2D: Custom receiver communication channel](Exercise%202D/README.md)
 
 
 
