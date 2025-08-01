@@ -24,8 +24,8 @@ For the following 5 exercises, it is necessary to copy several integrations flow
 **Explanation:**
 
 1. Go into your Integration Suite tenant which you used for the [exercise 1](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01)
-(a)	Choose Design -> Integration and APIs
-(b)	Open the integration package: **OpenSAP BTP4 Week3 Exercises - Templates**
+   1. Choose Design -> Integration and APIs
+    2.Open the integration package: **OpenSAP BTP4 Week3 Exercises - Templates**
 
 ![image](assets/1.png)
 
@@ -42,13 +42,11 @@ Remark: You may have mistakenly copied the integration flow to the same template
 
 ![image](assets/2.png)
 
-
 1. Go into your package openSAP-BTP4-User13 -> Artifacts, and
     1.	Select all 6 copied integration flows which start with your user id.
     2.	Click on Actions -> Configure
 
 ![image](assets/3.png)
-
 
 1. In the window “Configure Selected Artifacts”
     1.	Change in the configuration menus of all selected integration flows. 
