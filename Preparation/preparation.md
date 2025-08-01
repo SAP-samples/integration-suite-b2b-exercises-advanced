@@ -8,3 +8,5 @@ For the following 5 exercises, it is necessary to copy several integrations flow
 ![alt text](assets/image6.png)
 
 ![alt text](assets/image7.png)
+
+[Start with Exercise 2](../Exercise%202/README.md)

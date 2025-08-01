@@ -132,4 +132,4 @@ If you set “false”, you’ll get the receiver UN/EDIFACT interchange payload
 
 ![image](assets/15.png)
 
-[Continue with Exercise 2A](Exercise/Ex1/EXERCISE%201A%3A%20CUSTOMIZATIONS%20AT%20SENDER%20PROCESSING%20SIDE/README.md)
+[Continue with Exercise 2A](../Exercise%202A/README.md)

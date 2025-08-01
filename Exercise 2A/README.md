@@ -204,4 +204,4 @@ This segment group should be qualified by the qualifier value “7” (Tax) from
 
 ![image](assets/20.png)
 
-[Continue with Exercise 2B](Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/README.md)
+[Continue with Exercise 2B](../Exercise%202B/README.md)

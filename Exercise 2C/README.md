@@ -114,4 +114,4 @@ The following steps explain how you can set up a custom post-processing, which w
 
 ![image](assets/12.png)
 
-[Continue with Exercise 2D](Exercise/Ex1/EXERCISE%201D%3A%20CUSTOM%20RECEIVER%20COMMUNICATION%20CHANNEL/README.md)
+[Continue with Exercise 2D](../Exercise%202D/README.md)

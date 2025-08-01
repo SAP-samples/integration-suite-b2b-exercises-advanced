@@ -86,4 +86,4 @@ The following steps explain how you can set up search attributes and use these i
 
 ![image](assets/9.png)
 
-[Continue with Exercise 2C](Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/README.md)
+[Continue with Exercise 2C](../Exercise%202C/README.md)
