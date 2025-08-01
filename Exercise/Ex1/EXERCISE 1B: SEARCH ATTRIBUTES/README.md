@@ -22,7 +22,7 @@ The following steps explain how you can set up search attributes and use these i
 (e)	And in the field of “Description”: The number of the business document\
 (f)	Click on “Save” button.\
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/1.png)
+![image](assets/1.png)
 
 
 3.	In the list of “Custom Search Attributes”
@@ -30,7 +30,7 @@ The following steps explain how you can set up search attributes and use these i
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Remark**: Please consider, currently it is possible to create up to ten different search attributes for the overall tenant. If another user already created a search attribute with the name “Document Nr.”, you could define a new search attribute with another name. You can create search attributes as long as 10 search attributes are not created at your tenant. You can also use one of already existing search attributes for the next steps.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/2.png)
+![image](assets/2.png)
 
 
 4. Go into your TPA: “Procure to Pay – Pnnnnnnnn” and\
@@ -43,7 +43,7 @@ The following steps explain how you can set up search attributes and use these i
 (g)	Select the Business Transaction Activity: Inbound\
 (h)	Click on “Save” button.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/3.png)
+![image](assets/3.png)
 
 5.	After creating this search attribute, you\
 (a)	Should see this search attribute in the list of “Attributes”.\
@@ -55,12 +55,12 @@ The following steps explain how you can set up search attributes and use these i
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v)	Business Transaction Activity: Outbound\
 (c)	 Save and Click on “Update” button.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/4.png)
+![image](assets/4.png)
 
 6.	Now, you can go to your API testing tool and\
 (a)	Send for e.g., the IDOC ORDRSP.ORDERS05 - Purchase Order Response message.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/5.png)
+![image](assets/5.png)
 
 
 7.	Go to the B2B Monitoring as described in the exercise 1. If you do an update\
@@ -68,7 +68,7 @@ The following steps explain how you can set up search attributes and use these i
 (b)	In the detail panel, click on the tab “Custom Attributes”. \
 (c)	You will see the tag “Document Nr.” with the value from the element /ORDERS05/E1EDK01/BELNR[1].
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/6.png)
+![image](assets/6.png)
 
 
 8.	You can also add these search attributes in the B2B Monitoring overview list by \
@@ -76,7 +76,7 @@ The following steps explain how you can set up search attributes and use these i
 (b)	You see a window “Columns” in where you can select and deselect the visibility of the columns. Select in here the search attribute “Document Nr.”\
 (c)	Click on “OK” button.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/7.png)
+![image](assets/7.png)
 
 
 9.	For searching, you must add the search attributes into the search mask by\
@@ -84,13 +84,13 @@ The following steps explain how you can set up search attributes and use these i
 (b)	Select the search attribute “Document Nr.” in the opened window “Adapt Filters”, and\
 (c)	Click on “OK” button.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/8.png)
+![image](assets/8.png)
 
 10.	You will find now the B2B Monitoring list for the search attributes the search field and column “Document Nr.”\
 (a)	You can now enter the value of the BELNR into the search field “Document Nr.”\
 (b)	Click on “Go” button.\
 (c)	And you’ll see just the filtered list of interchanges with the same value in field “Document Nr.”.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201B%3A%20SEARCH%20ATTRIBUTES/assets/9.png)
+![image](assets/9.png)
 
-[Continue with Exercise 2C](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/README.md)
+[Continue with Exercise 2C](Exercise/Ex1/EXERCISE%201C%3A%20CUSTOMIZATIONS%20AT%20RECEIVER%20PROCESSING%20SIDE/README.md)

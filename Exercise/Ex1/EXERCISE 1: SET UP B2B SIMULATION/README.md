@@ -2,7 +2,7 @@
 
 In the first exercise, we set up a B2B simulation so that you can use an API test tool to send the interchange payloads to the Integration Suite - B2B system via an HTTP request. The received result via the synchronous HTTP response will be displayed in the same session of the API test tool like shown in the following figure.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/1.png)
+![image](assets/1.png)
 
 
 ## **How it works?**
@@ -17,14 +17,14 @@ These are:\
 
 Pnnnnnnnn - Step 1a - B2B Simulation.Sender
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/2.png)
+![image](assets/2.png)
 
 
 
 
 Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/3.png)
+![image](assets/3.png)
 
 
 
@@ -54,7 +54,7 @@ The following steps explain to you how you can set up and test the API testing t
 (h)	Enter the Address: /TP_P12345678/tpm/b2b-simulation/receiver whereby P12345678 is your user id address\
 (i)	Click on “Save” button
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/4.png)
+![image](assets/4.png)
 
 
 
@@ -68,7 +68,7 @@ The following steps explain to you how you can set up and test the API testing t
 (f)	Select the Adapter “Process_Direct”\
 (g)	Click on “Save” button
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/5.png)
+![image](assets/5.png)
 
 
 
@@ -76,7 +76,7 @@ The following steps explain to you how you can set up and test the API testing t
 (a)	Deactivate it, and\
 (b)	Click on “Edit” button
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/6.png)
+![image](assets/6.png)
 
 
 4.	Change the communication channels accordingly:\
@@ -86,19 +86,19 @@ The following steps explain to you how you can set up and test the API testing t
 (d)	Purchase Order Response – Receiver Communication: B2B-Simulation.Receiver\
 (e)	Click on “Save” button
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/7.png)
+![image](assets/7.png)
 
 
 5. Write the changed configuration into the Partner Directory by \
 (a)	Clicking on “Activate” button
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/8.png)
+![image](assets/8.png)
 
 
 6.	Take your API test tool of your choice. We prepared the content for Insomnia. If you don’t have installed an API test tool, download and install it for one of the following download sites:\
 Insomnia: https://insomnia.rest/download
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/9.png)
+![image](assets/9.png)
 
 
 7.	Your Tenant is opensapeu01
@@ -108,7 +108,7 @@ Insomnia: https://insomnia.rest/download
 (a)	Click on “Import” and\
 (b)	Import the provided collection “OpenSAP BTP4 - B2B Simulation - Insomnia Collection” from the discovery page
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/10.png)
+![image](assets/10.png)
 
 
 9.	Once you successfully imported the collection\
@@ -117,13 +117,13 @@ Insomnia: https://insomnia.rest/download
 (c)	In the window “Management Environments” select your tenant (openSAPEU01)\
 (d)	Subsitute the user id Pnnnnnnnnn with your user id such as P12345678 (or e.g. User13) and click on close button.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/11.png)
+![image](assets/11.png)
 
 
 10.	Back in the main view\
 (a)	Select the environment of your booked tenant name that you identified in step 7
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/12.png)
+![image](assets/12.png)
 
 
 10.	If you are now in the Insomnia “Collection” view:\
@@ -131,7 +131,7 @@ Insomnia: https://insomnia.rest/download
 (b)	Click on “Headers” tab for checking the header attributes.
 
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/13.png)
+![image](assets/13.png)
 
 
 11.	In the “Header” attributes view you should see:\
@@ -146,13 +146,13 @@ Which is the sending type system\
 true means, that a carriage return will be inserted after each segment.\
 If you set “false”, you’ll get the receiver UN/EDIFACT interchange payload without carriage return after each segment.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/14.png)
+![image](assets/14.png)
 
 
 12.	Now you can simulate the end-to-end flow\
 (a)	Click on “Send” button, and\
 (b)	You’ll see the result in the HTTP response part after view seconds, if everything was processed sufficiently.
 
-![image](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201%3A%20SET%20UP%20B2B%20SIMULATION/assets/15.png)
+![image](assets/15.png)
 
-[Continue with Exercise 2A](https://github.com/SAP-samples/integration-suite-b2b-exercises-advanced/blob/main/Exercise/Ex1/EXERCISE%201A%3A%20CUSTOMIZATIONS%20AT%20SENDER%20PROCESSING%20SIDE/README.md)
+[Continue with Exercise 2A](Exercise/Ex1/EXERCISE%201A%3A%20CUSTOMIZATIONS%20AT%20SENDER%20PROCESSING%20SIDE/README.md)
