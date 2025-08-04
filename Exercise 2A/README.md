@@ -2,6 +2,7 @@
 
 The second exercise is focused on the business transaction activity: Purchase Order Response in where the SAP IDOC ORDRSP.ORDERS05 is the sender interchange payload. It involves determining the corresponding tax identifier from a lookup table in the form of a CSV file and writing it to the segment TAX with the qualifier 7 within the LIN segment group of the UN/EDIFACT ORDRSP outpout. This CSV file looks like following:
 
+```csv
 PARTN;IDTNR;Currency;TaxID|
 0001000654;MZ-FG-S100;EUR;AAAA-01|
 0001000654;MZ-FG-S200;EUR;BBBB-02|
@@ -11,7 +12,7 @@ PARTN;IDTNR;Currency;TaxID|
 0001000654;MZ-FG-S200;USD;CCCC-03|
 0001000655;STC-23222;EUR;AAAA-01|
 0001000655;TGB19424905;EUR;BBBB-02
-
+```
 
 In this case, the TaxId can only be determined using three input values (PARTN, IDTNR, Currency). If there is match of the 2 input values with the respective entries in the CSV file, a TaxID from the specific entry will be returned. The input of PARTN (partner number) is to be taken from the sold-to partner (E1EKA1[PARVW = AG]) in the sender IDOC message. The IDTNR originates from the respective line item, especially from the segment E1EDP19[QUALF = 002] "Material number used by vendor" within this line item (E1EDP01). The currency is a value that is maintained in the trading partner profile as a custom parameter, and it has to be handed over accordingly so that this can be used during the lookup in the mapping step. The expected output should be like in the following example in where you can see that each line item (LIN) has an additional TAX segment with the specific TaxID:
 
@@ -47,7 +48,7 @@ Especially the function for $i in $vLookupTable return if … loops across each 
 
 1.	Exercise 1 is successfully fulfilled.
 2.	Integration flow: Pnnnnnnnn . Pre-Processing . OrderResponse - Outbound . SAP IDoc is deployed
-3.	Integration flow: P12345678 - Insert entry into lookup table BTP4_CVM_Table once so that you can find in the data store OpenSAP-BTP4_CVM_Table and entry with the ID: EDI_Pnnnnnnnn in where Pnnnnnnnn is your user id. See: Monitor  Integrations and APIs  -> Data Stores  -> OpenSAP-BTP4_CVM_Table
+3.	Integration flow: P12345678 - Insert entry into lookup table BTP4_CVM_Table once so that you can find in the data store OpenSAP-BTP4_CVM_Table and entry with the ID: EDI_Pnnnnnnnn in where Pnnnnnnnn is your user id. See: Monitor -> Integrations and APIs  -> Data Stores  -> OpenSAP-BTP4_CVM_Table
 
 ## **Exercise Steps**
 
