@@ -1,4 +1,4 @@
- **PREPARATION: COPY AND DEPLOY INTEGRATION FLOWS**
+ **Preparation: Copy and deploy Integration Flows**
 
 For the following 5 exercises, it is necessary to copy several integrations flows to your own integration package and finally these copied integration flows should also be configured and deployed.
 
