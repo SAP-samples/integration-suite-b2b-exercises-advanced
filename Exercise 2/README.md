@@ -1,6 +1,6 @@
 # **Exercise 2: set up B2B Simulation**
 
-In the this exercise, we set up a B2B simulation so that you can use an API test tool to send the interchange payloads to the Integration Suite - B2B system via an HTTP request. The received result via the synchronous HTTP response will be displayed in the same session of the API test tool like shown in the following figure.
+In  this exercise, we set up a B2B simulation that you can use an API test tool to send the interchange payloads to the Integration Suite - B2B system via an HTTP request. The received result via the synchronous HTTP response will be displayed in the same session of the API test tool like shown in the following figure.
 To make all entities unique we recommend adding your user id like TradingPartner-P123456 (if your userid is P123456). If your user is like UserXX so, please create then entities like TradingPartner-UserXX. In other words: please replace the “P” with “User” and the “123456” with your number. As all identifiers are compared as strings be very precise (especially with upper and lower case) there otherwise you will run into error messages.
 
 ![image](assets/1.png)
@@ -33,11 +33,11 @@ Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 
 ## **Exercise Steps**
 
-The following steps explain to you how you can set up and test the API testing tool based B2B simulation using the 2 already prepared custom communication integration flows:
+The following steps explain to you how to set up and test the API testing tool based B2B simulation using the 2 already prepared custom communication integration flows:
 + Pnnnnnnnn - Step 1a - B2B Simulation.Sender
 + Pnnnnnnnn - Step 3b - B2B Simulation.Receiver
 
-1. Create the B2B receiver simulation communication channel by the following steps:
+1. Create the B2B receiver simulation communication channel by the following steps (as usual replace the P with User and the 123456 with your number):
 
     1.	Go to B2B Scenarios -> Your Trading Partner (P12345678)  -> Systems  -> Communications
     2.	Click on “Create” button
@@ -89,13 +89,13 @@ Insomnia: https://insomnia.rest/download
 7.	Your Tenant is opensapeu01
 8.	If you go for Insomnia
     1.	Click on “Import” and
-    2.	Import the provided collection “OpenSAP BTP4 - B2B Simulation - Insomnia Collection” from the discovery page
+    2.	Import the provided collection [“Insomnia Collection”](assets/Insomnia_collection.json)
 
 ![image](assets/10.png)
 
 9.	Once you successfully imported the collection
     1.	You should see the collection of the prepared HTTP Get Requests
-    2.	Click on button ( ) for managing environments
+    2.	Click on button for managing environments
     3.	In the window “Management Environments” select your tenant (openSAPEU01)
     4.	Subsitute the user id Pnnnnnnnnn with your user id such as P12345678 (or e.g. User13) and click on close button.
 

@@ -1,4 +1,4 @@
- **Preparation: Copy and deploy Integration Flows**
+**Preparation: Copy and deploy Integration Flows**
 
 For the following 5 exercises, it is necessary to copy several integrations flows to your own integration package and finally these copied integration flows should also be configured and deployed.
 
@@ -26,7 +26,7 @@ Remark: You may have mistakenly copied the integration flow to the same template
 
 ![image](assets/2.png)
 
-1. Go into your package openSAP-BTP4-User13 -> Artifacts, and
+1. Go into your package openSAP-BTP4-UserXX -> Artifacts (with XX replaced by your number), and
     1.	Select all 6 copied integration flows which start with your user id.
     2.	Click on Actions -> Configure
 
