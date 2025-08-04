@@ -1,20 +1,4 @@
-# **Introduction**
-
-These are now the second part of the exercises in where you will learn more about the customizations using pre- and post-processing, and B2B simulations. 
-
-In the [first exercise](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01) you will set the B2B simulation that is based on a custom sender and receiver communication flow. This B2B simulation is very useful for simulating the configuration and mapping business transaction activities and you’ll especially see how the other customizations from next exercise will behave. Starting with this exercise, you especially need an API testing tool. This API testing tool is necessary for submitting data via to the communication sender channel flows.
-
-With the second exercise, you will now learn how you can customize the business transaction activities in trading partner agreements at sender side by using:
-
-+ Custom pre-processing using a customized pre-processing integration flow, and
-+ Custom parameters also in combination with the mapping
-
-The third exercise cover the definition and use of B2B Monitoring related search attributes. This is very useful, if you want to display and search via values which are deeply in business messages and not a part of the headers such as business document identifiers.
-
-Through the fourth exercise, you will learn how and for what customized post-processing can be created, configured, and used as custom post-processing in the TPA.
-In the fifth exercise, you will learn how to create and configure a customized receiver communication.
- 
-# **PREPARATION: COPY AND DEPLOY INTEGRATION FLOWS**
+ # **PREPARATION: COPY AND DEPLOY INTEGRATION FLOWS**
 
 For the following 5 exercises, it is necessary to copy several integrations flows to your own integration package and finally these copied integration flows should also be configured and deployed.
 

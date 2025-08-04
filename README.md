@@ -15,7 +15,7 @@ Through the fourth exercise, you will learn how and for what customized post-pro
 In the fifth exercise, you will learn how to create and configure a customized receiver communication.
 
 ## Steps
-[Tenant Preparation and Introduction](Introduction/README.md)
+[Tenant Preparation](Introduction/README.md)
 
 [Exercise 2: set up B2B Simulation](Exercise%202/README.md)
 
