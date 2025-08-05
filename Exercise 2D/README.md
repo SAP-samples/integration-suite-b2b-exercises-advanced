@@ -72,7 +72,7 @@ The following steps explain, how you can set up a custom communication channel a
 
 ![image](assets/8.png)
 
-9. **Just if customer parameter is missing** If you don’t find the specific company parameter, you should add it in the “Company Profile” by the following steps:
+9. **Just if customer parameter is missing:** If you don’t find the specific company parameter, you should add it in the “Company Profile” by the following steps:
     1.	Go Company Profile and select "BestRun"
     2.	Click on tab "Parameters"
     3.	Click on "Create" button
