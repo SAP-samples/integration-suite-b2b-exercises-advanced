@@ -18,7 +18,7 @@ For the following 5 exercises, it is necessary to copy several integrations flow
     1.	Click per integration flow at Action button -> Copy.
     2.	In the window “Copy …” change the prefix “Pnnnnnnnn” with your user id such as “User13” 
     3.	Delete the suffix “_copy.”
-    4.	Select your integration package such as **openSAP-BTP4-User13**
+    4.	Select your integration package such as **openSAP-BTP4-UserXX** (with XX replaced by your number)
     5.	Click on button “Copy.” 
     6.	In the message window click on button “Cancel” and do the same with the next integration flow
 

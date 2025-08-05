@@ -86,7 +86,7 @@ Insomnia: https://insomnia.rest/download
 
 ![image](assets/9.png)
 
-7.	Your Tenant is opensapeu01
+7.	identify your Tenant. The relevant part is the first part of the url (e.g. opensapeu01)
 8.	If you go for Insomnia
     1.	Click on “Import” and
     2.	Import the provided collection [“Insomnia Collection”](assets/Insomnia_collection.json)
@@ -97,7 +97,7 @@ Insomnia: https://insomnia.rest/download
     1.	You should see the collection of the prepared HTTP Get Requests
     2.	Click on button for managing environments
     3.	In the window “Management Environments” select your tenant (openSAPEU01)
-    4.	Subsitute the user id Pnnnnnnnnn with your user id such as P12345678 (or e.g. User13) and click on close button.
+    4.	Subsitute the user id Pnnnnnnnnn with your user id such as P12345678 (e.g. User13) and click on close button.
 
 ![image](assets/11.png)
 

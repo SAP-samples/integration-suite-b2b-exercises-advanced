@@ -108,7 +108,7 @@ The following steps explain to you, how you can integrate integration flow that 
 ![image](assets/10.png)
 
 9.	But before you can do the changes in the mapping guideline, you should add the necessary segment group for the “Tax” into the target MIG that is based on the EDIFACT ORDRSP. For this purpose, you should
-    1.	Enable the edit mode, and
+    1.	Enable the edit mode
     2.	Confirm the message for creating a new draft version in case you had an active status of the MAG
     3.	Click on the link of the target MIG above of the structure of the target MIG.
 
@@ -172,20 +172,18 @@ This segment group should be qualified by the qualifier value “7” (Tax) from
       <xsl:variable name="vLookupTable" select="tokenize($CVM_TaxCode, '\|')"/>
       <xsl:value-of select="for $i in $vLookupTable return if(tokenize($i, ';')[1] = $vPartnerID and tokenize($i, ';')[2] = $vIdtNr and tokenize($i, ';')[3] = $vCurrency) then tokenize($i, ';')[4] else ()"/>
       ```
-    **Maybe you can copy this xslt code at first to a ascii editor to be sure no unnecessary line breaks are in.**
-
     4. Press the Validate Button to make sure the xslt is correct
     5.	Click on “Save” button.
 
 ![image](assets/17.png)
 
 16.	Once you have made all the changes and in case you created a new version of your MAG, you must change the version in the Mapping step by updating to the latest version by the following steps, 
-  1.	If the TPA is in “Edit” mode
-  2.	Click on the mapping step at the “Purchase Order Response” activity
-  3.	Click on button 
-  4.	In the window “Select MAG” open the dropdown
-  5.	Select the latest version.
-  6.	Click on button “Choose.”
+    1.	If the TPA is in “Edit” mode
+    2.	Click on the mapping step at the “Purchase Order Response” activity
+    3.	Click on button 
+    4.	In the window “Select MAG” open the dropdown
+    5.	Select the latest version.
+    6.	Click on button “Choose.”
 
 **Remark: The versions of the corresponding source and target MIGs will be updated, automatically.**
 
