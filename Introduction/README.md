@@ -14,7 +14,7 @@ For the following 5 exercises, it is necessary to copy several integrations flow
 ![image](assets/1.png)
 
 
-1. Copy all the 6 integration flows of this integration package into your already created integration package **openSAP-BTP4-P12345678** by the following steps:
+2. Copy all the 6 integration flows of this integration package into your already created integration package **openSAP-BTP4-P12345678** by the following steps:
     1.	Click per integration flow at Action button -> Copy.
     2.	In the window “Copy …” change the prefix “Pnnnnnnnn” with your user id such as “User13” 
     3.	Delete the suffix “_copy.”
@@ -26,13 +26,13 @@ Remark: You may have mistakenly copied the integration flow to the same template
 
 ![image](assets/2.png)
 
-1. Go into your package openSAP-BTP4-UserXX -> Artifacts (with XX replaced by your number), and
+3. Go into your package openSAP-BTP4-UserXX -> Artifacts (with XX replaced by your number), and
     1.	Select all 6 copied integration flows which start with your user id.
     2.	Click on Actions -> Configure
 
 ![image](assets/3.png)
 
-1. In the window “Configure Selected Artifacts”
+4. In the window “Configure Selected Artifacts”
     1.	Change in the configuration menus of all selected integration flows. 
     2.	The placeholder “Pnnnnnn” into user id such as UserXX (e.g. TP_User13)
     3.	Once you changed user id in all configuration menus, click on button “Deploy all”.
