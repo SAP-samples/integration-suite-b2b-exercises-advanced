@@ -1,7 +1,7 @@
 # **Exercise 2C: Customizations at receiver processing side**
 
 
-In the this exercise, you will learn how to do a further sorting of the mapping output through an integration flow “Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT” that is called by custom post-processing.  In this case, the line items should be sorted according to the Tax Identifiers from Exercise 3. It means the line items with the same Tax Identifiers should be grouped together. 
+In the this exercise, you will learn how to do a further sorting of the mapping output through an integration flow “Pnnnnnnn . Post-Processing . OrderResponse - Outbound. UN-EDIFACT” that is called by custom post-processing.  In this case, the line items should be sorted according to the Tax Identifiers from Exercise 2B. It means the line items with the same Tax Identifiers should be grouped together. 
 
 You will also learn, how you can calculate a summary of line items. This should be provided via an additional MOA (Monetary Amount) segment in the trailer part of the message. 
 
@@ -45,30 +45,30 @@ The following steps explain how you can set up a custom post-processing, which w
 
 3.	Switch to the edit mode. Once you did it, add following group and leaf nodes according to the instructions of creating a MIG (Chapter 2) from [Exercise 1](https://github.com/SAP-samples/integration-suite-b2b-exercises-basic/tree/main/exercises/Ex01).
 
-    1.	Data element 1082 (Line item identifier) in SG26  LIN
+    1.	Data element 1082 (Line item identifier) in SG26 -> LIN
     2.	Segment group “MOA” (Monetary Amount) underneath the segment UNS. This MOA segment should be qualified with the qualifier value “128” (Total amount) and the following child nodes should be selected:
         1.	C516 – Monetary Amount
         2.	5025 – Monetary amount type code qualifier
         3.	5004 – Monetary amount
-    3.	Click on “Save” button and may “Cancel” button for unlocking the MIG.
+    3.	Click on “Save” button and press “Cancel” button for unlocking the MIG.
 
 ![image](assets/5.png)
 
 4.	Now you can add the additional mapping elements into the MAG. Therefore, go back into the opened “MAG” and click on refresh button (F5) so that you can see the extensions made in the target MIG. Once the MAG in the edit mode, you should do following steps:
     1.	If there is a mapping to the node 1082 delete this (right click on the line and press delete)
-    2.	Add in the leaf node (data element) 1082 - Line item identifier underneath SG26  LIN a constant by clicking on action button, and
+    2.	Add in the leaf node (data element) 1082 - Line item identifier underneath SG26->LIN a constant by clicking on action button, and
     3.	Add the constant value “###” into it so that this leaf node will be created in target payload.
     4.	Click on “OK” button.
     5.	Crate a mapping element from source group node “E1EDS01” to the target group node “MOA[5025 = 128] so that this group node will be created in the target payload.
-    (**Remark**: This group node will be otherwise not created, because it is optional)
+    (**Remark: This group node will be otherwise not created, because it is optional**)
     6.	Go to the leaf node (data element) 5004 – Monetary among and click on action button.
     7.	So that you can enter the constant “1” (it must be an integer).
     8.	Click on button “OK”.
-    9.	Click on “Save” button and may “Cancel” button for unlocking the MAG.
+    9.	Click on “Save” button and press “Cancel” button for unlocking the MAG.
 
 ![image](assets/6.png)
 
-1. Once you added the extensions into the MAG, go back into your TPA “Procure to Pay - P12345678” and add further activity parameters which inserts additional values into the envelope header (UNB segment) by 
+1. Once you've added the extensions into the MAG, go back into your TPA “Procure to Pay - P12345678” and add further activity parameters which inserts additional values into the envelope header (UNB segment) by 
     1.	Open the tab “Activity Parameters”
     2.	Click on Add Parameters -> Create activity parameters  -> Outbound
     3.	Add the parameter key “SAP_EDI_REC_Interchange _Agreement_ID” which refers to the data element 0032 – Communications agreement ID in the UNB segment
