@@ -27,6 +27,7 @@ In the fifth exercise, you will learn how to create and configure a customized r
 
 [Exercise 2D: Custom receiver communication channel](Exercise%202D/README.md)
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/integration-suite-b2b-exercises-advanced)](https://api.reuse.software/info/github.com/SAP-samples/integration-suite-b2b-exercises-advanced)
 
 
 ## License
